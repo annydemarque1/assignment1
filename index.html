@@ -1,102 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WealthWise Financial - Your Financial Success Starts Here</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <script>
-      const WORDPRESS_API_URL = "https://your-wordpress-site.com/wp-json/wp/v2";
-      //Locally: const WORDPRESS_API_URL = 'http://localhost/your-site/wp-json/wp/v2';
-    </script>
 
-    <!-- Navigation -->
-    <nav>
-      <div class="container">
-        <div class="nav-container">
-          <div class="logo" id="site-title">WealthWise Financial</div>
-          <ul class="nav-menu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WealthWise Financial - Your Financial Success Starts Here</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="nav-container">
+        <div class="logo" id="site-title">
+          <i class="fas fa-chart-line"></i> WealthWise Financial
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link"><i class="fas fa-home nav-icon"></i>Home</a></li>
+          <li><a href="#services" class="nav-link"><i class="fas fa-briefcase nav-icon"></i>Services</a></li>
+          <li><a href="#about" class="nav-link"><i class="fas fa-users nav-icon"></i>About</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope nav-icon"></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 id="hero-title">Your Financial Success Starts Here</h1>
+      <p id="hero-description">Expert financial guidance tailored to your unique goals. Let us help you build wealth,
+        plan for retirement, and secure your financial future with personalized strategies.</p>
+      <img
+        src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+        alt="Financial Success" class="hero-image">
+      <a href="#contact" class="cta-button interactive-btn" id="hero-cta">
+        <i class="fas fa-rocket"></i> Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title" id="services-title">Our Services</h2>
+      <div class="services-grid" id="services-grid">
+        <div class="service-card">
+          <i class="fas fa-chart-pie service-icon"></i>
+          <h3>Investment Planning</h3>
+          <p>Build a diversified portfolio tailored to your risk tolerance and financial goals. Our expert advisors will
+            help you navigate market volatility and maximize returns.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-piggy-bank service-icon"></i>
+          <h3>Retirement Planning</h3>
+          <p>Secure your golden years with comprehensive retirement strategies. From 401(k) optimization to IRA
+            management, we'll ensure you're prepared for the future.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-calculator service-icon"></i>
+          <h3>Tax Planning</h3>
+          <p>Minimize your tax burden with strategic planning and optimization. Our tax-efficient strategies will help
+            you keep more of what you earn.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-scroll service-icon"></i>
+          <h3>Estate Planning</h3>
+          <p>Protect your legacy and ensure your assets are distributed according to your wishes. We'll help you create
+            a comprehensive estate plan.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-alt service-icon"></i>
+          <h3>Insurance Planning</h3>
+          <p>Safeguard your family's financial security with appropriate insurance coverage. We'll assess your needs and
+            recommend the right protection.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-graduation-cap service-icon"></i>
+          <h3>Financial Education</h3>
+          <p>Empower yourself with financial knowledge through our educational resources and personalized coaching
+            sessions.</p>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <h1 id="hero-title" class="skeleton">Loading...</h1>
-        <p id="hero-description" class="skeleton">Loading content...</p>
-        <a href="#contact" class="cta-button" id="hero-cta">Get Started</a>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title" id="about-title">
+        <i class="fas fa-building"></i> About WealthWise Financial
+      </h2>
+      <div class="about-content" id="about-content">
+        <img
+          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Our Team" class="about-image">
+        <p>With over 15 years of experience in financial planning and wealth management, WealthWise Financial is your
+          trusted partner in achieving financial success. Our team of certified financial planners brings expertise,
+          integrity, and personalized attention to every client relationship.</p>
+        <p>We believe that financial planning is not just about numbers – it's about understanding your dreams, goals,
+          and concerns. Our comprehensive approach ensures that every aspect of your financial life is carefully
+          considered and optimized.</p>
+        <p>From young professionals just starting their careers to families planning for their children's education and
+          retirees seeking to preserve their wealth, we provide tailored solutions that evolve with your changing needs.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2 class="section-title" id="services-title">Our Services</h2>
-        <div class="services-grid" id="services-grid">
-          <!-- Services will be loaded here -->
-          <div class="service-card skeleton">
-            <h3>Loading...</h3>
-            <p>Loading service information...</p>
-          </div>
-          <div class="service-card skeleton">
-            <h3>Loading...</h3>
-            <p>Loading service information...</p>
-          </div>
-          <div class="service-card skeleton">
-            <h3>Loading...</h3>
-            <p>Loading service information...</p>
-          </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">
+        <i class="fas fa-phone-alt"></i> Contact Us
+      </h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user contact-icon"></i>Full Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title" id="about-title">About Us</h2>
-        <div class="about-content">
-          <div id="about-content" class="skeleton">
-            <p>Loading about information...</p>
-          </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope contact-icon"></i>Email</label>
+          <input type="email" id="email" name="email" required>
         </div>
-      </div>
-    </section>
+        <div class="form-group">
+          <label for="subject"><i class="fas fa-tag contact-icon"></i>Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment contact-icon"></i>Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="cta-button interactive-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+  <script src="./scripts/wordpress.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title" id="contact-title">Contact Us</h2>
-        <form class="contact-form" id="contact-form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
-      </div>
-    </section>
-    <script src="./index.js"></script>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
 </html>
